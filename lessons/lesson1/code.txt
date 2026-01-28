@@ -1,0 +1,56 @@
+let a = prompt("Введите свой возраст")
+let d = Number(a)
+let b = 10
+let c = d+b
+console.log("Через десять лет вам будет:"+ c)
+alert("Через десять лет вам будет:"+ c)
+
+
+let a = 'apa'
+let b = 'api'
+console.log(a > b)
+
+let x= +prompt()
+let y= +prompt()
+if(x>y){
+    console.log('x>y')}
+else if(x<y){
+    console.log('x<y')}
+else{console.log(x=y)}
+
+=
+
+let x= +prompt()
+let y= +prompt()
+let result=(x>y)? 'x>y':'x< или = y'
+console.log(result)
+
+Задача програма спрашивает у пользователя какой сйчас год
+если пользователь пишет текущий год то програма пишет правильный год
+если пользователь пишет неправильный год то програма пишет 
+
+let x= +prompt()
+if(x===2026){
+    console.log(true)
+}
+else if(x<=2026){
+    console.log(false)
+}
+else if(x>=2026){
+    console.log(false)
+}
+else{console.log(true)}
+
+
+let a= true
+let b= false
+console.log(a&&!b)||(!a||!b)
+
+
+let login=prompt()
+let pass=prompt()
+if(login==='admin' &&
+    pass==='password'){
+    alert("Успех")
+}
+else{alert("Доступ запрещен")}
