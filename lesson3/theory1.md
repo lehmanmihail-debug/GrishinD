@@ -26,4 +26,20 @@ const myFunctionFourth = () => {
     console.log(c)  
 }  
 myFunctionFourth()
-# 
+# Обьекты
+
+
+const user = {
+    name: "Ivanov",
+    age: 20,
+}
+
+user.rating = 3.14
+
+user.name ="Sidorov"
+delete user['name']
+console.log('rating' in user)
+
+
+
+копирование обьектов
