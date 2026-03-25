@@ -41,4 +41,52 @@ filter()
 Возвращает новый массив содержащий элементы которые удовлетворяет условие
 вывести масив со всеми положительными элементами
 
-const newArray = array.filter(function(element , index, array)) - название в зависимости от типа данных
+const newArray = array.filter(function(element , index, array)) 
+    - название в зависимости от типа данных
+---
+Метод forEach 
+
+Применяет функцию к нашему Массиву
+
+Выводит положительные элементы:
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+
+array.forEach(element => {
+    if (element >= 0) {
+        console.log(element)
+    }
+    {
+        return false
+    }
+});
+
+console.log(array)
+---
+Применяет функцию для каждого элемента массива (не создовая нового массива)
+---
+умножает на два каждый элемент
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+
+array.forEach(element => {
+    element = element * 2
+    console.log(element)
+});
+console.log(array)
+---
+
+Чаще используется Метод map (но этот метод создает новый массив)
+
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+
+const newArray = array.map(element =>{
+    return element*2
+}) 
+console.log(newArray)
+
+console.log(newArray.includes("string")) это поиск элемента в массиве (true / false)
+
+
+Метод sort
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+console.log(array.sort()) 
+    - по умолчанию он сортирует элементы как строки

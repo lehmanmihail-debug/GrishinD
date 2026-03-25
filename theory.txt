@@ -390,6 +390,47 @@ user.name ="Sidorov"
 delete user['name']
 console.log('rating' in user)
 
+Массивы 
 
-копирование обьектов
+let array = [-3, 0, 3.14, "string", true, "22" ]  
+console.log(array[3]) 
 
+    элементов всего 6 индекс начинается с 0
+    вывод элемента по индексу (выведет в лог 3.14)
+
+Метод Push
+Добавление элемента в конец масива
+let array = [-3, 0, 3.14, "string", true, "22" ]
+array.push(10)
+console.log(array)
+    в конце массива добавляется числовая 10
+
+console.log(array.length) вывод количества элементов в массиве
+
+Метод Shift
+Удаляет элемент с индексем 0 тоесть первый элемент в массиве
+
+array.shift()
+
+Метод unshift
+Добавляет элемент в начало массива 
+
+array.unshift("hello world")
+
+IndexOF
+console.log(array.indexOf("string"))
+возвращает индекс элемента со значением "String"
+
+Метод pop 
+array.pop() 
+    последний элемент в масиве удаляется
+
+Filter
+
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+filter()
+
+Возвращает новый массив содержащий элементы которые удовлетворяет условие
+вывести масив со всеми положительными элементами
+
+const newArray = array.filter(function(element , index, array)) - название в зависимости от типа данных
