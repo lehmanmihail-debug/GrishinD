@@ -392,3 +392,4 @@ console.log('rating' in user)
 
 
 копирование обьектов
+

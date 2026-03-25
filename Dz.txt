@@ -68,3 +68,30 @@ else if (x === 0) {
 else if (y === 0) {
     console.log("Точка лежит на оси X");
 }
+
+
+lesson 4  !!!
+
+let array = [-3, 0, 3.14, "string", true, "22" ]
+array.push(10)
+console.log(array)
+console.log(array.length)
+array.unshift("hello world")
+console.log(array)
+array.pop()
+console.log(array.indexOf("string"))
+
+
+Метод фильтр
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+
+const newArray = array.filter(function(element) {
+    if (element >= 0) {
+        return true
+    }
+    else {
+        return false
+    }
+})
+console.log(array)
+console.log(newArray)
