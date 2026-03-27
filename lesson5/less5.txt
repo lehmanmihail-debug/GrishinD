@@ -1,0 +1,37 @@
+1 создать нвоый массив элементы которого возводяться на два 
+map
+
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+const newaArray = array.map(element => element * element)
+console.log(newaArray)
+
+2 создать новый массив, который содержит все четные числа 
+Filter
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+const newArray = array.filter(element => element % 2 === 0 )
+console.log(newArray)
+
+concat слияние массивов 
+
+const arrayFirst = [-3,-1, 0, 3.14, 10, 20 ]
+const arraySecond = [ 30, 40, 50]
+const arrayThird = [-10, -20, -30]
+const mixedArray = arrayFirst.concat(arraySecond).concat(arrayThird)
+console.log(mixedArray)
+
+slice срез массивов через новый массив 
+массив начинается с числа которое мы вписываем
+
+const arrayFirst = [-3,-1, 0, 3.14, 10, 20 ]
+const arraySecond = [ 30, 40, 50]
+const arrayThird = [-10, -20, -30]
+const slicedArray = arrayFirst.slice(3)
+console.log(slicedArray)
+
+const slicedArray = arrayFirst.slice(3, 5) с третьего по четвертый  (00, 01, 02, 03, 04, 05)
+
+
+Dom 
+
+document.body.style.background = 'black'
+document.body.style.color = 'white'
