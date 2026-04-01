@@ -2,7 +2,6 @@
 const clicker = () => {
 const first = document.querySelector("p")
 first.textContent = "Текст изменен"
-
 }
 const mybtn =document.querySelector(".mybtn")
 mybtn.addEventListener("click", clicker)
@@ -60,55 +59,3 @@ function changeStyle() {
     block.style.border = '6px solid green';
     }
 }
-// №5 
-const input = document.getElementById('itemInput');
-    const addButton = document.getElementById('addButton');
-    const list = document.getElementById('dynamicList');
-
-function addNewItem() {
-    const text = input.value.trim();
-            
-    if (text === '') {
-    alert('введите текст элемента');
-    return;
-    }
-            
-    const li = document.createElement('li');
-            
-
-    const span = document.createElement('span');
-    span.textContent = text;
-            
-    const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Удалить';
-    deleteBtn.className = 'delete-btn';
-            
-    deleteBtn.onclick = function() {
-    li.remove();
-    };
-       
-    li.appendChild(span);
-    li.appendChild(deleteBtn);
-            
-    list.appendChild(li);
-            
-    input.value = '';
-    input.focus();
-}
-        
-addButton.onclick = addNewItem;
-
-const deleteButtons = document.querySelectorAll('.delete-btn');
-    for (let btn of deleteButtons) {
-    btn.onclick = function() {
-    btn.parentElement.remove();
-    };
-}
-// №6
-    const cells = document.querySelectorAll('#colorTable td');
-
-    cells.forEach(cell => {
-        cell.addEventListener('click', function() {
-        this.classList.toggle('green');
-        });
-    });

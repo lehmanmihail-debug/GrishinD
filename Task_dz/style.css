@@ -42,28 +42,3 @@
     text-align: center;
     line-height: 100px;
 }
-.add-section{
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #999;
-            padding: 12px 20px;
-            text-align: center;
-            cursor: pointer;
-        }
-        th {
-            background-color: #ddd;
-            cursor: default;
-        }
-        /* Класс для зеленого цвета */
-        td.green {
-            background-color: green;
-            color: white;
-        }
