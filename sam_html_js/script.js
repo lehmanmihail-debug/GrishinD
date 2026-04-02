@@ -9,7 +9,7 @@ function createMain() {
     main.appendChild(createImgBlock("Этого кота зовут Тимофей", "https://i.pinimg.com/originals/ae/cf/e1/aecfe1897f90ae13f077fba872a6b6ac.png?nii=t"));
     main.appendChild(createForm())
     main.className = "container";
-    document.body.appendChild(Main);
+    document.body.appendChild(main);
 }
 function createImgBlock(text, imgSrc) {
     const block = document.createElement("div");
@@ -29,7 +29,7 @@ function createForm() {
             <button type="submit">Отправить</button>
         </form>
     `;
-    return container;
+    return formcontainer;
 }
 function createFooter() {
     const footer = document.createElement("footer");
@@ -39,7 +39,6 @@ function createFooter() {
 
 
 
-
 createHeader();
 createMain(); 
-createFooter(); 
+createFooter();
