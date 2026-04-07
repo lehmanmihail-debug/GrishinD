@@ -1,13 +1,9 @@
-const num1 = document.getElementById('first'); 
-const num2 = document.getElementById('second');
-const selector = document.getElementById('operation');
-const spanres = document.getElementById('result')
-
 function calculate() {
-    let first = parseFloat(num1.value);
-    let second = parseFloat(num2.value);
-    let operation = selector.value
-    let result
+let first = parseFloat(document.getElementById('first').value);
+let second = parseFloat(document.getElementById('second').value);
+let operation = document.getElementById('operation').value;
+let spanres = document.getElementById('result');
+
 
 switch (operation) {
     case '+':
@@ -25,9 +21,17 @@ switch (operation) {
     default:
     result = "Нет таких значений" ;
 }
-console.log(result)
 spanres.textContent = result;
 }
+function input() {
+    (document.getElementById('first').value) = '';
+    (document.getElementById('second').value) = '';
+    document.getElementById("result").textContent = '';
+}
+const btndel = document.getElementById("btndel")
+btndel.addEventListener("click", input)
+
 const button = document.getElementById("mybtn")
 mybtn.addEventListener("click", calculate)
+
 
