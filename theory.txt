@@ -434,3 +434,119 @@ filter()
 вывести масив со всеми положительными элементами
 
 const newArray = array.filter(function(element , index, array)) - название в зависимости от типа данных
+
+1 создать нвоый массив элементы которого возводяться на два 
+map
+
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+const newaArray = array.map(element => element * element)
+console.log(newaArray)
+
+2 создать новый массив, который содержит все четные числа 
+Filter
+const array = [-3,-1, 0, 3.14, 10, 20 ]
+const newArray = array.filter(element => element % 2 === 0 )
+console.log(newArray)
+
+concat слияние массивов 
+
+const arrayFirst = [-3,-1, 0, 3.14, 10, 20 ]
+const arraySecond = [ 30, 40, 50]
+const arrayThird = [-10, -20, -30]
+const mixedArray = arrayFirst.concat(arraySecond).concat(arrayThird)
+console.log(mixedArray)
+
+slice срез массивов через новый массив 
+массив начинается с числа которое мы вписываем
+
+const arrayFirst = [-3,-1, 0, 3.14, 10, 20 ]
+const arraySecond = [ 30, 40, 50]
+const arrayThird = [-10, -20, -30]
+const slicedArray = arrayFirst.slice(3)
+console.log(slicedArray)
+
+const slicedArray = arrayFirst.slice(3, 5) с третьего по четвертый  (00, 01, 02, 03, 04, 05)
+
+
+Dom 
+
+document.body.style.background = 'black'
+document.body.style.color = 'white'
+
+Dom 
+! обращение к элементам в html
+document.getElementById("first") возвращает элемент по ID
+
+element.style.color = "white"
+document.body.style.color = ''
+
+! обращение без айди
+
+const first = document.querySelector("div")
+first.style.background = "red"
+
+! querySelector:
+
+const first = document.querySelector("div") 
+first.style.background = "red"
+
+const second = document.querySelector("div:nth-child(2)") выбрать второй див из всех
+second.style.background = "lime"
+
+const third = document.querySelector(".third") выбрать див по классу
+third.style.background = "yellow"
+
+const fourth = document.querySelector("#fourth") через айди
+fourth.style.background = "purple"
+
+! innerHTML
+
+const first = document.querySelector("div")
+first.innerHTML = "<h1>Hello</h1>"
+
+! text content = "...
+
+const first = document.querySelector("div")
+first.innerHTML = `<h1 id="h1"></h1>`
+const h1 = document.getElementById("h1")
+h1.textContent = "test"
+h1.style.color = "skyblue""
+
+
+! обращение от блока к блоку 
+
+const clicker = () => {
+const first = document.querySelector("div")
+first.textContent = "TEST"
+first.style.color = "red"
+first.style.fontSize = "100px"\
+}
+
+! addEventListener ("click",clicker) вешает оброботчик на любую функцию
+
+const clicker = () => {
+const first = document.querySelector("div")
+first.textContent = "TEST"
+first.style.color = "red"
+first.style.fontSize = "100px"
+}
+
+const mybtn =document.querySelector(".mybtn")
+mybtn.addEventListener("click", clicker)
+
+! setAttribute("id", "first") добовляет или класс или айди для элемента в html
+
+const clicker = () => {
+const first = document.querySelector("div")
+first.textContent = "TEST"
+first.style.color = "red"
+first.style.fontSize = "100px"
+first.setAttribute("id","first")
+}
+
+const mybtn =document.querySelector(".mybtn")
+mybtn.addEventListener("click", clicker)
+
+! first.removeAttribute("id") удаляет атрибут заданный в скобках
+
+! Toggle добавляет класс елси он отсутсвует или удаляет класс если он есть
