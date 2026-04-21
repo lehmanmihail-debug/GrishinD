@@ -1,0 +1,10 @@
+.FirstContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.product {
+    height: 300px;
+    width: 300px;
+}
