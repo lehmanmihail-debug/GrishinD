@@ -1,5 +1,5 @@
 const users = [
-    {id: 1, name: "Иванов"}, // 0 обьект
+    {id: 1, name: "Иванов"}, // 1 обьект (0 индекс)
     {id: 2, name: "Петров"},
     {id: 3, name: "Сидоров"}
 ]
@@ -8,7 +8,7 @@ function fillTable (data) {
     const thead = document.getElementById("thead")
     const tbody = document.getElementById("tbody")
     const tr = document.createElement("tr")
-    const headers = Object.keys(data[0]) // выбираем ключи из 0 обьекта
+    const headers = Object.keys(data[0]) // выбираем ключи из 1 обьекта (0 индекс)
 
     headers.forEach(header => {
         const td = document.createElement("td")
@@ -18,16 +18,16 @@ function fillTable (data) {
 
     thead.appendChild(tr)
 
-    data.forEach(name => {
-        const tbodytd = document.createElement("tr");
+    data.forEach(item => {
+        const tbodytr = document.createElement("tr");
         
         headers.forEach(header => {
             const td = document.createElement("td");
-            td.textContent = name[header];
-            tbodytd.appendChild(td);
+            td.textContent = item[header];
+            tbodytr.appendChild(td);
         });
         
-        tbody.appendChild(tbodytd);
+        tbody.appendChild(tbodytr);
     });
 }
 
