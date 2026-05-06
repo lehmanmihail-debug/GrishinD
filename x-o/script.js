@@ -27,7 +27,7 @@ function clicker(event) {
     }
  
     if (checkWin()) {
-        alert(currentPlayer + "Победил!")
+        alert(currentPlayer + " Победил!")
         gameOver = true
     }
     else if (board.every(cell => cell !== "")) {
